@@ -38,11 +38,6 @@ img {
   margin: 0 auto;
 }
 
-section .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 /* Header */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -123,7 +118,7 @@ section .container {
 /* Main section */
 .main-section {
   background-color: #2e2f42;
-  height: calc(100vh - 72px);
+  padding: 188px 0;
 }
 
 .main-section .container {
@@ -141,6 +136,7 @@ section .container {
   text-align: center;
   color: #fff;
   margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .main-button {
@@ -152,6 +148,8 @@ section .container {
   color: #fff;
   background-color: #4d5ae5;
   border-radius: 4px;
+  border: none;
+  min-width: 169px;
   width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -163,6 +161,10 @@ section .container {
 }
 
 /* Advantages section */
+.advantages-section {
+  padding: 120px 0;
+}
+
 .advantages-list {
   display: flex;
   gap: 24px;
@@ -203,17 +205,22 @@ section .container {
 /* Team section */
 .team-section {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
 }
 
 .team-list {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-top: 72px;
+}
+
+.team-list-container {
+  padding: 32px 0;
 }
 
 .team-title {
@@ -223,6 +230,7 @@ section .container {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin: 72px;
 }
 
 .team-subtitle {
@@ -232,7 +240,7 @@ section .container {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -240,8 +248,6 @@ section .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-top: 8px;
-  padding-bottom: 32px;
 }
 
 /* Porfolio section */
@@ -296,7 +302,7 @@ section .container {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
   padding: 24px 0;
 }
